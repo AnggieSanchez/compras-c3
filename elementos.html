@@ -6,12 +6,39 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="shortcut icon" href="https://img.icons8.com/color/480/html-5--v1.png" 
             type="image/x-icon">
+        <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0; 
+            }
+            header{
+                border: 2px solid blue;
+            }
+            main{
+                border: 2px solid black;
+                width: 80%;
+                margin: 32px auto;
+                /* margin-top: 32px;
+                margin-left: auto;
+                margin-right: auto; */
+            }
+            footer{
+                border: 2px solid yellow;
+            }
+
+            main h3, main a, main img{
+                border: 2px solid green;
+            }
+        </style>
+
     </head>
     <body>
         <!-- Contenido de mi página web -->
         <header>
             <!-- Logo de la página -->
-            <h1>
+            <h1 class="fondo_naranja">
                 <a target="_blank" href="https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png">
                     <img width="80px" src="https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png" alt="MisiónTIC 2022"/>                
                 </a>
@@ -34,16 +61,16 @@
             <br/>
 
             <h2>Listas</h2>
-            <h3>Ordenadas</h3>
+            <h3 class="fondo_naranja">Ordenadas</h3>
             <ol type="a">
                 <li>Local</li>
                 <li>Nacional</li>
                 <li>Internacional</li>
             </ol>
             <h3>Desordenadas</h3>
-            <ul>
+            <ul id="desordenadas">
                 <li>Normal</li>
-                <li>Express</li>
+                <li class="fondo_naranja">Express</li>
                 <li>
                     <a href="otra.html">Ir a la otra página</a> 
                 </li>
@@ -53,7 +80,7 @@
             </dt>
             <br/>
 
-            <h2>Enlaces</h2>
+            <h2 style="background-color: aqua; color: black; text-align: start;" class="fondo_naranja" id="titulo_enlaces">Enlaces</h2>
             <a target="_blank" href="https://misiontic2022.unab.edu.co">Ir a la página de MisiónTIC UNAB</a>
             <a href="otra.html">Ir a la otra página</a> 
 
@@ -69,7 +96,7 @@
                     <tr>
                         <th>Cliente</th>
                         <th>Producto</th>
-                        <th>Cantidad</th>
+                        <th class="fondo_naranja">Cantidad</th>
                         <th>Total</th>
                     </tr>
                 </thead>
@@ -83,7 +110,7 @@
                     <tr>
                         <td>Memoria USB</td>
                         <td>10</td>
-                        <td>$700000</td>
+                        <td class="fondo_naranja">$700000</td>
                     </tr>
                     <tr>
                         <td>Maria</td>
@@ -106,7 +133,7 @@
                 <input type="date" name="fecha"/>
                 <br/> <br/>
                 <label for="cliente">Cliente</label>
-                <input required type="text" name="cliente" placeholder="Escriba su nombre"/>
+                <input class="fondo_naranja" required type="text" name="cliente" placeholder="Escriba su nombre"/>
                 <br/> <br/>
                 <label for="cantidad">Cantidad</label>
                 <input type="number" name="cantidad" placeholder="Escriba la cantidad"/>
@@ -139,21 +166,21 @@
                 <button type="reset">Resetear</button>
                 <br><br>
                 <input type="submit" name="enviar" value="Enviar">
-                <button>Enviar</button>
+                <button class="fondo_naranja">Enviar</button>
             </form>
 
 
             
 
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             
         </main>
         <footer>
             <!-- Pie de página -->
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </footer>
     </body>
 
