@@ -1,8 +1,8 @@
 // alert("Hola mundo segunda forma")
 
-console.log("Hola mundo desde consola");
+// console.log("Hola mundo desde consola");
 
-document.write("<h1>Hola mundo desde JavaScript</h1 >");
+// document.write("<h1>Hola mundo desde JavaScript</h1 >");
 
 // Tipo de datos: String, Number, Boolean;
 
