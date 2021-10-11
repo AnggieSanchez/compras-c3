@@ -37,6 +37,7 @@
     console.log(listaProductos);
  */
 
+/* Funciones
 function saludar(nombre, edad){
     let estado;
     if(edad>=18){
@@ -61,7 +62,7 @@ const saludar_abreviado = (nombre) => `Hola ${nombre} desde función`;
 
 let mensaje = saludar_flecha("Juan",25);
 document.write(mensaje)
-
+*/
 
 
 // listaProductos.forEach((elemento)=>{
