@@ -17,6 +17,11 @@ let listaProductos = [producto1,producto2,producto3,producto4,producto5];
 let nombresEnvio = ["Express", "Normal"];
 let valoresEnvio = [20000, 10000];
 
+let listaCompras= [
+    {cliente: "Jose", documento: "741852963", producto:producto5, cantidad: 20,
+        envio: 1, descuento: 100000, total: 910000 }
+];
+
 const cargarProductos = ()=>{
     let select = document.getElementById("productos");
     select.innerHTML = `<option value="-1">Seleccione el producto</option>`;
@@ -44,6 +49,26 @@ const agregarCompra = (compra)=>{
         </tr>` 
 
 };
+
+const cargarCompras = ()=>{
+    
+    let tabla = document.getElementById("datos_compras");
+
+    tabla.innerHTML="";
+
+    for(const unaCompra of listaCompras)
+    tabla.innerHTML+=`<tr>
+                        <td>${unaCompra.cliente} (${unaCompra.documento})</td>
+                        <td>${unaCompra.producto.nombre} - $${unaCompra.producto.precio}</td>
+                        <td>${unaCompra.cantidad}</td>
+                        <td>${nombresEnvio[unaCompra.envio]}</td>
+                        <td>$${unaCompra.descuento}</td>
+                        <td>$${unaCompra.total}</td>
+                    </tr>`
+
+}
+
+cargarCompras();
 
 
 const procesarInformacion = ()=>{
@@ -83,7 +108,10 @@ const procesarInformacion = ()=>{
 
     formulario.reset();
     
-    agregarCompra(compra);  
+    listaCompras.push(compra);
+    cargarCompras();
+    
+    // agregarCompra(compra);  
 };
 
 // titulo2.setAttribute("atributo", 123);
